@@ -1,0 +1,135 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/txtDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/display_background"
+        android:padding="24dp"
+        android:gravity="end"
+        android:textSize="36sp"
+        android:textColor="@color/text_color_white"
+        android:text="0"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:stretchColumns="*"
+        android:paddingTop="16dp">
+
+        <TableRow>
+            <Button
+                android:id="@+id/btnClear"
+                android:text="@string/btn_clear"
+                style="@style/SpecialButtonStyle" />
+
+            <Button
+                android:id="@+id/btnSignChange"
+                android:text="@string/btn_sign_change"
+                style="@style/SpecialButtonStyle" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:text="@string/btn_delete"
+                style="@style/SpecialButtonStyle" />
+
+            <Button
+                android:id="@+id/btnDivide"
+                android:text="@string/btn_divide"
+                style="@style/OperationButtonStyle" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/btn7"
+                android:text="@string/btn_7"
+                style="@style/NumericButtonStyle" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:text="@string/btn_8"
+                style="@style/NumericButtonStyle" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:text="@string/btn_9"
+                style="@style/NumericButtonStyle" />
+
+            <Button
+                android:id="@+id/btnMultiply"
+                android:text="@string/btn_multiply"
+                style="@style/OperationButtonStyle" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/btn4"
+                android:text="@string/btn_4"
+                style="@style/NumericButtonStyle" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:text="@string/btn_5"
+                style="@style/NumericButtonStyle" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:text="@string/btn_6"
+                style="@style/NumericButtonStyle" />
+
+            <Button
+                android:id="@+id/btnSubtract"
+                android:text="@string/btn_subtract"
+                style="@style/OperationButtonStyle" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/btn1"
+                android:text="@string/btn_1"
+                style="@style/NumericButtonStyle" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:text="@string/btn_2"
+                style="@style/NumericButtonStyle" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:text="@string/btn_3"
+                style="@style/NumericButtonStyle" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:text="@string/btn_add"
+                style="@style/OperationButtonStyle" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/btn0"
+                android:text="@string/btn_0"
+                style="@style/NumericButtonStyle"
+                android:layout_columnSpan="2" />
+
+            <Button
+                android:id="@+id/btnDecimal"
+                android:text="@string/btn_decimal"
+                style="@style/NumericButtonStyle" />
+
+            <Button
+                android:id="@+id/btnEquals"
+                android:text="@string/btn_equals"
+                style="@style/EqualsButtonStyle" />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

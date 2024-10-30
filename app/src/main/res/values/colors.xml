@@ -1,0 +1,10 @@
+<resources>
+    <color name="background">#F0F0F0</color>
+    <color name="display_background">#333333</color>
+    <color name="button_numeric">#D1D9E6</color>
+    <color name="button_operation">#A3B1C6</color>
+    <color name="button_special">#858DA6</color>
+    <color name="button_equals">#4A90E2</color>
+    <color name="text_color_white">#FFFFFF</color>
+    <color name="text_color_black">#000000</color>
+</resources>
