@@ -2,6 +2,7 @@ package com.example.calculatorius;
 
 import android.os.Bundle;
 import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,7 +17,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Initialize display
         txtDisplay = findViewById(R.id.txtDisplay);
+
+        // Set onClickListeners for numeric buttons
         findViewById(R.id.btn0).setOnClickListener(v -> appendNumber("0"));
         findViewById(R.id.btn1).setOnClickListener(v -> appendNumber("1"));
         findViewById(R.id.btn2).setOnClickListener(v -> appendNumber("2"));
@@ -29,11 +33,13 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn9).setOnClickListener(v -> appendNumber("9"));
         findViewById(R.id.btnDecimal).setOnClickListener(v -> appendNumber("."));
 
+        // Set onClickListeners for operator buttons
         findViewById(R.id.btnAdd).setOnClickListener(v -> setOperator("+"));
         findViewById(R.id.btnSubtract).setOnClickListener(v -> setOperator("-"));
         findViewById(R.id.btnMultiply).setOnClickListener(v -> setOperator("*"));
         findViewById(R.id.btnDivide).setOnClickListener(v -> setOperator("/"));
 
+        // Set onClickListeners for other buttons
         findViewById(R.id.btnEquals).setOnClickListener(v -> calculate());
         findViewById(R.id.btnClear).setOnClickListener(v -> clearDisplay());
         findViewById(R.id.btnDelete).setOnClickListener(v -> deleteLastCharacter());
